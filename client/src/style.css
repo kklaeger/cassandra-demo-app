@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-bg-color: #0e74aff1; 
+  }
+
+input[type="text"] {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 1px;
+    border: none;
+    -webkit-box-shadow: 0 1px 3px #a7a7a7;
+    box-shadow: 0 1px 1px 0px #bdbdbd;
+}
+
+#quote {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin-right: 36px;
+    line-height: 24px;
+}
+
+.input-fields{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#person-list {
+    position: relative;
+    width: 80%;
+    max-width: 620px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 4px #7a7a7a;
+    box-shadow: 1 1px 2px #666666;
+    padding: 8px 20px;
+}
+
+#delete-button {
+    position: relative;
+    right: -24px; 
+}
+
+#quote-arrow {
+    height: 14px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    transition: all 0.25s;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+#quote-area {
+    height: 60px;
+    display: block;
+    margin-top: 10px;
+    width: 360px;
+    border: none;
+    padding: 6px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 1px #bebebe;
+    margin-bottom: 20px;
+}
+
+#quote-arrow:hover {
+    background: rgb(235, 235, 235);
+    box-shadow: 0px 1px 2px 1px #b9b9b9;
+}
+
+#quote-span {
+    display: inline-block;
+    position: relative;
+    left: 6px;
+    font-size: 16px;
+    bottom: 0px;
+}
+
+#add-quote {
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-top: solid 1.5px rgb(231, 231, 231);;
+    padding-top: 20px;
+}
+
+.header {
+    box-shadow: 0 1px 2px 1px #e0e0e0;
+    background: var(--main-bg-color);
+    color: white;
+    position: fixed;
+    padding: 11px 106px;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    right: 0;
+    margin-top: 0;
+    z-index: 20;
+    display: block;
+}
+
+h2 {
+    color: var(--main-bg-color);
+}
+
+.quotes-wrap {
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.quotes-time {
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+    margin-left: -20px;
+}
+
+.person-list-entry:first-child {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 27px;
+    margin-top: 5px;
+    padding-left: 3px;
+}
+
+.person-list-entry:nth-child(2) {
+    display: inline;
+    margin-left: 22px;
+    position: relative;
+    font-weight: 600;
+    top: -5px;
+    border-bottom: solid 2px #0288D1;
+    padding-bottom: 1px;
+}
+
+
+
+.person-list-entry {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.person-list-entry:last-of-type {
+    display: inline;
+}
+
+#left {
+    position: fixed;
+    width: 25%;
+    padding-top: 60px;
+    border-right: solid 2px rgb(233, 233, 233);
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+#content {
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    top: 60px;
+}
+
+.buttons {
+    display: "inline-block";
+    padding: 0.5em 1em;
+    border: 1px solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:rgb(45,45,45);
+    text-align:center;
+    transition: all 0.2s;
+    background: rgba(241, 241, 241, 0.98);
+    box-shadow: 0 1px 0px #a4a4a4c7;
+}
+
+.buttons:hover {
+    color: #343434;
+    border: solid 1px rgb(228, 228, 228);
+    background-color: #d6d6d6;
+}
